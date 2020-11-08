@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>样式的优先级</title>
+		<style type="text/css">
+			div{color: red ;}
+			p{color: green !important;}
+			.content5{color: peru ;}
+			#p1{color: violet;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<!--
+				!important表示“重要的”，用来提升样式优先级。
+				当给指定的样式添加!important时，表示当前样式优先级最高，
+				此时可以不用按照上一小节中的规则。（注意!important对默认继承不起作用）。
+
+			-->
+			<p class="content5" id="p1">今宵有酒今宵醉，人间不值得，只要学不死，就往死里学，生活不止眼前的苟且，还有诗和远方</p>
+		</div>
+		
+	</body>
+</html>
